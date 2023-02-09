@@ -5,8 +5,8 @@ module.exports = {
     },
     extends: [
         "plugin:react/recommended",
-        // 'plugin:react/jsx-runtime',
         "airbnb",
+        "plugin:i18next/recommended",
     ],
     parser: "@typescript-eslint/parser",
     parserOptions: {
@@ -19,6 +19,7 @@ module.exports = {
     plugins: [
         "react",
         "@typescript-eslint",
+        "i18next",
     ],
     rules: {
         quotes: [2, "double"],
@@ -32,6 +33,7 @@ module.exports = {
         "react/require-default-props": "off",
         "react/function-component-definition": "off",
         "no-underscore-dangle": "warn",
+        "i18next/no-literal-string": ["error", { markupOnly: true }],
 
         "react/jsx-filename-extension": [2, { extensions: [".js", ".jsx", ".tsx"] }],
         "react/react-in-jsx-scope": "off",
