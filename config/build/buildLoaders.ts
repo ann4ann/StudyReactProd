@@ -1,13 +1,12 @@
 import webpack from "webpack";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
-import {BuildOptions} from "./types/config";
+import { BuildOptions } from "./types/config";
 
-export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
-
+export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
     const svgLoader = {
         test: /\.svg$/,
-        use: ['@svgr/webpack'],
-    }
+        use: ["@svgr/webpack"],
+    };
 
     const babelLoader = {
         test: /\.(jsx?|tsx?)$/,
@@ -15,7 +14,7 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
         use: {
             loader: "babel-loader",
             options: {
-                presets: ['@babel/preset-env'],
+                presets: ["@babel/preset-env"],
                 plugins: [
                     [
                         "i18next-extract",
@@ -23,29 +22,29 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
                             locales: ["ru", "en"],
                             keyAsDefaultValue: false,
                             // saveMissing: true,
-                            outputPath: 'public/locales/{{locale}}/{{ns}}.json',
-                        }
+                            outputPath: "public/locales/{{locale}}/{{ns}}.json",
+                        },
                     ],
-                ]
-            }
+                ],
+            },
         },
 
-    }
+    };
 
     const fileLoader = {
         test: /\.(png|jpe?g|gif|woff2?)$/i,
         use: [
             {
-                loader: 'file-loader',
+                loader: "file-loader",
             },
-        ]
-    }
+        ],
+    };
 
     const typescriptLoader = {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: "ts-loader",
         exclude: /node_modules/,
-    }
+    };
 
     const cssLoaders = {
         test: /\.s[ac]ss$/i,
@@ -60,11 +59,11 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
                             ? "[path][name]__[local]--[hash:base64:5]"
                             : "[hash:base64:8]",
                     },
-                }
+                },
             },
             "sass-loader",
         ],
-    }
+    };
 
     return [
         fileLoader,
@@ -72,5 +71,5 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
         babelLoader,
         typescriptLoader,
         cssLoaders,
-    ]
+    ];
 }
