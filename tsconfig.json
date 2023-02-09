@@ -8,6 +8,9 @@
     "allowJs": true,
     "moduleResolution": "node",
     "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     // позволяет работать с common.js через import
     "esModuleInterop": true,
     // позволяет импортировать без __ * as __
