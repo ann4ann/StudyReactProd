@@ -1,3 +1,7 @@
 {
-  "Язык": "English"
+    "Страница не найдена": "Page not found",
+    "Язык": "English",
+    "Произошла непредвиденная ошибка": "Unexpected error",
+    "Обновить страницу": "Refresh page",
+    "throw Error": "throw Error"
 }
