@@ -38,7 +38,7 @@ module.exports = {
         "no-underscore-dangle": "warn",
         "i18next/no-literal-string": [
             "error",
-            { markupOnly: true, ignoreAttribute: ["data-testid"] },
+            { markupOnly: true, ignoreAttribute: ["data-testid", "to"] },
         ],
 
         "react/jsx-filename-extension": [
