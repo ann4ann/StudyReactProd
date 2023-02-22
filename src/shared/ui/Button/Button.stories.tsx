@@ -29,22 +29,16 @@ PrimaryDark.args = {
 };
 PrimaryDark.decorators = [ThemeDecorator(Theme.DARK)];
 
-export const Secondary = Template.bind({});
-Secondary.args = {
+export const Clear = Template.bind({});
+Clear.args = {
     children: "Text",
     theme: ButtonTheme.CLEAR,
 };
-export const SecondaryDark = Template.bind({});
-SecondaryDark.args = {
-    children: "Text",
-    theme: ButtonTheme.CLEAR,
-};
-SecondaryDark.decorators = [ThemeDecorator(Theme.DARK)];
 
-export const Outline = Template.bind({});
-Outline.args = {
+export const ClearInverted = Template.bind({});
+ClearInverted.args = {
     children: "Text",
-    theme: ButtonTheme.OUTLINE,
+    theme: ButtonTheme.CLEAR_INVERTED,
 };
 
 export const OutlineSizeL = Template.bind({});
