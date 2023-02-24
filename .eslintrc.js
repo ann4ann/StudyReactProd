@@ -31,7 +31,7 @@ module.exports = {
         "react/jsx-indent-props": [2, 4],
         "max-len": ["error", { ignoreComments: true, code: 100 }],
 
-        "react/jsx-props-no-spreading": "warn",
+        "react/jsx-props-no-spreading": "off",
         "no-unused-vars": "off",
         "no-param-reassign": "off",
         "@typescript-eslint/no-unused-vars": "warn",
