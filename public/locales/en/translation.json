@@ -4,5 +4,11 @@
     "Короткий язык": "En",
     "Произошла непредвиденная ошибка": "Unexpected error",
     "Обновить страницу": "Refresh page",
-    "throw Error": "throw Error"
+    "throw Error": "throw Error",
+    "Войти": "Login",
+    "Выйти": "Logout",
+    "Главная": "Main page",
+    "О сайте": "About",
+    "Введите логин": "Enter your login",
+    "Введите пароль": "Enter your password"
 }
