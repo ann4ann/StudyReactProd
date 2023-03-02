@@ -30,6 +30,7 @@ module.exports = {
         "react/jsx-indent": [2, 4],
         "react/jsx-indent-props": [2, 4],
         "max-len": ["error", { ignoreComments: true, code: 120 }],
+        "lines-between-class-members": [2, "always", { exceptAfterSingleLine: true }],
 
         "react/jsx-props-no-spreading": "off",
         "no-unused-vars": "off",
