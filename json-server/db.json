@@ -25,5 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "firstname": "Person",
+    "lastname": "Personov",
+    "age": 18,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Moskow",
+    "username": "admin",
+    "avatar": "https://www.pngall.com/wp-content/uploads/5/Profile-Avatar.png"
+  }
 }
