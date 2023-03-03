@@ -55,12 +55,14 @@ module.exports = {
         ],
         "react/react-in-jsx-scope": "off",
         "import/no-unresolved": "off",
+        "no-undef": "off",
         "import/prefer-default-export": "off",
         "import/extensions": "off",
         "import/no-extraneous-dependencies": "off",
     },
     globals: {
         __IS_DEV__: true,
+        __API__: true,
     },
     overrides: [
         {

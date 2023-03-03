@@ -15,7 +15,6 @@ export function createReducerManager(initialReducers: ReducersMapObject<StateSch
 
     return {
         getReducerMap: () => reducers,
-
         // The root reducer function exposed by this object
         // This will be passed to the store
         reduce: (state: StateSchema, action: AnyAction) => {

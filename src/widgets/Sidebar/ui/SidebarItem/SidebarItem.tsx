@@ -6,7 +6,7 @@ import cls from "./SidebarItem.module.scss";
 import { SidebarItemType } from "../../model/items";
 
 interface SidebarItemProps {
-    item?: SidebarItemType,
+    item: SidebarItemType,
     collapsed: boolean
 }
 
