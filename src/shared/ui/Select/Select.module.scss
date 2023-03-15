@@ -1,0 +1,26 @@
+.Wrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+.label {
+    margin-right: 5px;
+    color: var(--inverted-primary-color);
+}
+
+.readonly {
+    opacity: 0.7;
+}
+
+.select {
+    background: none;
+    outline: none;
+    color: var(--primary-color);
+    padding: 2px 10px 2px 2px;
+    border: 1px solid var(--inverted-primary-color);
+}
+
+.option {
+    color: var(--inverted-primary-color);
+    background: var(--inverted-bg-color);
+}
