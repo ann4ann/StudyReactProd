@@ -6,12 +6,13 @@
   "Выйти": "Logout",
   "Главная": "Main",
   "Короткий язык": "En",
-  "О сайте": "About",
   "Обновить страницу": "Refresh page",
   "Произошла непредвиденная ошибка": "Unexpected error",
   "Страница не найдена": "Page not found",
   "Язык": "English",
   "Укажите валюту": "Specify currency",
   "Укажите страну": "Specify country",
-  "Профиль": "Profile"
+  "Профиль": "Profile",
+  "О сайте": "About",
+  "Форма авторизации": "Authorisation form"
 }

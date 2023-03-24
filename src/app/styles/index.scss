@@ -2,10 +2,12 @@
 @import "./variables/global";
 @import "./themes/normal";
 @import "./themes/dark";
+@import "./themes/green";
+@import "./themes/contrast";
 
 body {
     font: var(--font-m);
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .app {
